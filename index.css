@@ -1,0 +1,246 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background-color: #fff;
+}
+.wrapper {
+  margin-top: 69px;
+}
+header {
+  z-index: 1;
+  width: 100%;
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+  /* justify-content: space-between; */
+  position: fixed;/* 上部に固定 */
+  top: 0;
+  box-shadow: 0px 2px 4px rgb(197, 197, 197);/* 影をつける */
+  /* display: inline-block; */
+}
+header .inner {
+  padding: 20px 30px;/* ヘッダー高さはロゴのフォントサイズ＋ここで決める */
+  display: flex;/* 子要素横並べ */
+  justify-content: space-between;/* 子要素を両端へ配置 */
+  align-items: center;
+}
+header .inner .header_logo a{
+  width: 200px;
+  margin: 0;
+  font-size: 120%;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(22, 22, 22); 
+}
+/* ヘッダーロゴ訪問後の表示も黒にする */
+header .inner .header_logo a:visited{
+  color: rgb(22, 22, 22);
+}
+
+header .inner .header_nav {
+  width: auto;
+}
+header .inner .header_nav ul {
+  margin: 0;
+  list-style-type: none;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .inner .header_nav ul li {
+  padding: 0 10px;/* 子要素の間隔 */
+}
+header .inner .header_nav ul li a {
+  font-size: 75%;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: .3s;
+  letter-spacing: .2em;
+  color: #333;
+  
+}
+
+header .inner .header_nav ul li a::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  content: "";
+  transition: .3s;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #333;
+}
+/* フロート時アンダーライン */
+header .inner .header_nav ul li a:hover::after {
+  width: 100%;
+}
+header .inner .header_nav ul li a:visited {
+  color: black;
+}
+#main {
+  margin: 0;  
+}
+#main .title {
+  width: 100%;
+  height: 650px;
+  background-color: #FFF;
+  text-align: center;
+  position: relative;
+}
+#main .title .inner {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+#main .title .inner .taro {
+  margin: 0;
+  font-size: 350%;
+  font-weight: 900;
+}
+#main .message {
+  margin: 0;
+    /* height: 750px; */
+}
+#main .message p{
+    margin: 0;
+}
+#main #sec1 {
+    height: 1400px;
+    background-color: rgb(248, 248, 248);
+}
+.sec_title {
+  width: 100%;
+  margin: 0;
+  padding: 10% 0 4% 0;
+  font-size: 200%;
+  font-weight: bold;
+  text-align: center;
+  /* text-align: center; */
+}
+#main #sec1 .inner {
+  padding: 0 20px;
+  
+  /* text-align: center; */
+  
+}
+
+#main #sec1 .inner .work_list {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  /* text-decoration: none; */
+}
+
+.work_link {
+  width: 100%;
+  max-width: 400px;
+  margin: 5px 3px;
+  flex: 0 0 45%;  
+  display: block;
+  text-decoration: none;
+}
+.work_link:visited {
+  color: rgb(100, 100, 100);
+}
+.work_list a .work_image {
+  height: 60%;
+  width: 100%;
+  max-width: 200%;
+  object-fit: cover;
+  margin: 0;
+  border: solid 1px rgb(235, 235, 235);
+}
+.work_title {
+  width: 100%;
+  font-size: 7px;
+  font-weight: bold;
+
+}
+.work_about {
+  width: 100%;
+  font-size: 6px;
+  color: rgb(116, 116, 116);
+}
+
+#main #sec2 {
+  height: 700px;
+}
+.skill_list {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.skill_set {
+  max-width: 50%;
+  box-sizing: border-box;
+  display: flex;
+}
+.skill_about {
+  width: 100%;
+}
+.skill_icon {
+  width: 60px;
+  object-fit: contain;
+}
+#main #sec3 {
+  height: 500px;
+  background-color: rgb(248, 248, 248);
+}
+#main #sec3 .innner {
+  margin: 0;
+}
+#main #sec3 .inner .about_set {
+  width: 80%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+#main #sec3 .inner .about_set img {
+  height: 200px;
+  width: 200px;
+  object-fit: contain;
+  border-radius: 50%;
+}  
+#main #sec3 .inner .about_set p {
+  padding-left: 30px;
+  font-size: 0.9em;
+}
+#main #sec4 {
+  height: 400px;
+  margin: 0;
+}
+#main #sec4 .inner {
+  text-align: center;  
+}
+#main #sec4 .inner a {
+  margin: 15px 10px 10px 10px;
+  
+  
+
+}
+#main #sec4 .inner .link {
+  text-decoration: none;
+  color: rgb(52, 204, 204);
+}  
+footer {
+  width: 100%;
+  text-align: center;
+  background-color: rgb(122, 122, 122);
+  padding: 30px 0;
+  font-size: 8px;
+}
